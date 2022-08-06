@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Webpage</title>
+
+    <style>
+        body{
+            border: 5px solid limegreen;
+            border-radius: 20px;
+            background-image: url(images/bg5.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: limegreen;
+            font-family: monospace;
+            font-size: 20px;
+        }
+
+        div{
+            margin-top: 50px;
+            margin-left: 50px;
+            margin-bottom: 50px;
+        }
+
+        h1{
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 45px;
+            text-align: center;
+            text-decoration: underline;
+            color: lime;
+        }
+        input{
+            border: 4px solid lime;
+            border-radius: 5px;
+            font-size: large;
+        }
+
+        textarea{
+            border: 4px solid lime;
+            border-radius: 5px;
+            font-size: large;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Hackathon Form</h1>
+
+    <div>
+    <form action="">
+        <label for="fname">First Name</label>&ensp;
+        <input type="text" id="fname" name="fname" placeholder="Enter First Name">
+        &emsp;&emsp;
+
+        <label for="lname">Last Name</label>&ensp;
+        <input type="text" id="lname" name="lname" placeholder="Enter Last Name">
+        <br><br>
+
+        <label for="email">Email</label><br>
+        <input type="email" id="email" name="email" placeholder="Mail id">
+        <br><br>
+
+        <label for="password">Password</label><br>
+        <input type="password" id="password" name="password" placeholder="Enter password">
+        <br><br>
+
+        <label for="reppassword">Repeat Password</label><br>
+        <input type="password" id="reppassword" name="reppassword" placeholder="Retype password">
+        <br><br>
+
+        <label for="phone">Mobile Number</label><br>
+        <input type="text" id="phone" name="phone" placeholder="Mobile number">
+        <br><br>
+
+        <label for="teamname">Team Name</label><br>
+        <input type="text" id="teamname" name="teamname" placeholder="Enter Team name">
+        <br><br><br><br>
+
+        <label for="members">Number of team members :</label>&emsp;
+        <input type="number" id="members" name="members" min="1" max="4">
+        <br><br><br><br>
+
+        
+        <label for="date">Which day Hackathon you will join ?</label>&emsp;<input type="date" id="date" name="date">
+
+        <br><br>
+        <p>Specify your College : </p>
+        <input type="radio" id="one" name="memebers" value="vitv"> <label for="one">VIT Vellore</label><br>
+        <input type="radio" id="two" name="memebers" value="vitc"> <label for="two">VIT Chennai</label><br>
+        <input type="radio" id="three" name="memebers" value="vita"> <label for="three">VIT Andhra Pradesh</label><br>
+        <input type="radio" id="four" name="memebers" value="vitb"> <label for="four">VIT Bhopal</label>
+        <br><br><br><br>
+        
+        <label for="address">Address</label><br>
+        <textarea name="address" id="address" cols="100" rows="1"></textarea>
+        <br><br>
+
+        <p>Specify the domain of your Idea :</p>
+        <input type="checkbox" id="domain1" name="domain1" value="software"> <label for="domain1">Software</label><t> &emsp;
+        <input type="checkbox" id="domain2" name="domain2" value="hardware"> <label for="domain2">Hardware</label>&emsp;
+        <input type="checkbox" id="domain3" name="domain3" value="AIML"> <label for="domain3">AI and ML</label>&emsp;
+        <input type="checkbox" id="domain4" name="domain4" value="Robotics"> <label for="domain4">Robotics</label>&emsp;
+        <input type="checkbox" id="domain5" name="domain5" value="cps"> <label for="somain5">Cyber Physical Systems</label>
+        <br><br><br><br>
+
+        <label for="idea">Describe your Teams Idea :</label><br>
+        <textarea name="idea" id="idea" cols="100" rows="10" placeholder="Tell us something about your idea..."></textarea>
+        <br><br>
+
+        <pre style="text-align: center;">
+        <input type="reset" title="This works">                <input type="submit" value="Submit" title="this does nothing">
+        </pre>
+    </form> 
+    </div>
+</body>
+</html>
