@@ -1,0 +1,47 @@
+h1{
+   text-transform: capitalize; 
+}
+
+body{
+    margin-left: 50px;
+    border-left: 1px solid gray;
+    padding-left: 20px;
+}
+
+label{
+    display: inline-block;
+    width: 200px;
+}
+
+/* pesudo class selection : selects styling for the input field in focus */
+
+
+input,textarea{
+    border: 1px solid gray;
+    border-radius: 3px;
+    cursor: text;
+}
+input:focus{
+    /* border: 1px solid rgb(81, 200, 255); */
+    background-color: lime;
+}
+textarea:focus{
+    /* border: 1px solid rgb(81, 200, 255); */
+    background-color: lime;
+}
+#telel1,#telel2,#telel3{
+    width: 30px;
+}
+
+
+#submit{
+    background-color: rgba(255,133,0,255);
+    margin-left: 205px;
+    padding: 10px 20px;
+    transition: 0.4s;
+}
+
+#submit:hover{
+    background-color: rgb(58, 241, 58);
+    cursor: pointer;
+}

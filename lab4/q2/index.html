@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form css q2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>provide your information</h1>
+    <hr>
+    <form action="">
+        <br><br>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" autofocus required>
+
+        <br><br>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <br><br>
+        <label for="tele">Telephone</label>
+        <input type="tel" id="telef" name="tele" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+
+        <br><br>
+        <label for="tele">Telephone</label>
+        <input type="tel" id="telel1" name="telel" pattern="\d{3}" maxlength="3">
+        <input type="tel" id="telel2" name="telel" pattern="\d{3}" maxlength="3">
+        <input type="tel" id="telel3" name="telel" pattern="\d{4}" maxlength="4">
+
+        <br><br>
+        <label for="regarding">Regarding</label>
+        <select name="regarding" id="regarding">
+            <option value="general">General</option>
+            <option value="appointment">Appointment</option>
+            <option value="food">Food Delivery</option>
+            <option value="marriage">Marriage</option>
+        </select>
+        
+        <br><br>
+        <label for="message">Message</label>
+        <textarea name="message" id="message" cols="30" rows="10" required></textarea>
+
+        <br><br>
+        <input type="submit" id="submit">
+    </form>
+</body>
+</html>
