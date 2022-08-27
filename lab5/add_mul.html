@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add and Multiply Array</title>
+
+    <style>
+        body{
+            text-align: center;
+        }
+        table{
+            /* to align the table to center of the element, use margin-left:auto; margin-right:auto */
+            margin-left: auto;
+            margin-right: auto;
+            border-spacing: 30px;
+            text-align: center;
+        }
+        pre{
+            font-size: 20px;
+            text-align: center;
+        }
+        .res{
+            width: 253px;
+        }
+        
+        button{
+            padding: 5px 20px;
+            transition: 500ms;
+        }
+        button:hover{
+            background-color: rgb(77, 247, 77);
+            color: white;
+        }
+        #btn1{
+            padding: 5px 32px;
+        }
+
+    </style>
+
+    <script src="add_mul.js">
+        
+    </script>
+    
+</head>
+<body>
+    <h1>Adding and Multipling Elements of a Array in JS</h1>
+    <pre>
+        Array 1 = [1,2,3,4,5,6,7,8,9,10]
+        Array 2 = [1,2,3,4,5,6,7,8,9,10]
+    </pre>
+
+    <table>
+        <tr>
+            <td><button id="btn1" onclick="add()">Add</button></td>
+            <td><button id="btn2" onclick="mul()">Multiply</button></td>
+        </tr>
+        <tr>
+            <td><p id="add" class="res">Result for addition will <br> be displayed here</p></td>
+            <td><p id="mul" class="res">Result for multiplication will <br> be displayed here</p></td>
+        </tr>
+    </table>
+    <br>
+
+</body>
+</html>

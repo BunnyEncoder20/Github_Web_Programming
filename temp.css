@@ -1,0 +1,11 @@
+table{
+    border-spacing: 10px;
+    border: 5px inset grey;
+}
+td,th{
+    border: 5px outset grey;
+    padding: 10px;
+    text-size-adjust: auto;
+    font-family: Arial;
+    
+}

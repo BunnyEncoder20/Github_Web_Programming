@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS basics</title>
+
+    <!-- <script src="temp.js"></script> -->
+    
+</head>
+<body>
+    <h1>My first JavaScript</h1>
+    <!-- Changing the innerHTML of a element with a specific ID -->
+    <!-- <button onclick="document.getElementById('demo').innerHTML ='Hello World';">Click To change the innerHTML of Paragraph below</button>
+    <p id="demo">This is the innerHTML part of the tag p</p> -->
+
+    <!-- Changing the img.src of a img tag and changing the img itself  -->
+    <!-- <button onclick="document.getElementById('image').src ='images/doggo.jpeg' ">Doggo</button>
+    <img id="image" src="images/doggo.jpeg" >
+    <button onclick="document.getElementById('image').src = 'images/cat.jpeg' ">Meow Meow</button> -->
+
+    <!-- trying to do the same as above using external js file -->
+    <!-- <button onclick="dog()">Doggo</button>
+    <img src="" id="image">
+    <button onclick="cat()">Catto</button> -->
+    <!-- DOES NOT WORK -->
+
+    <!-- changing the style of an element using JS -->
+    <!-- <p id="text">Demo Text here</p>
+    <button onclick="document.getElementById('text').style.fontSize='35px' ">Enlarge Font</button>
+    <button onclick="document.getElementById('text').style.fontSize='20px' ">Make font smol</button>
+    <button onclick="document.getElementById('text').style.color='red' ">Color = RED</button>
+    <button onclick="document.getElementById('text').style.color='blue' ">Color = BLUE</button>
+    <br><br>
+    <button onclick="document.getElementById('text').style.display='none' ">Hide text</button>
+    <button onclick="document.getElementById('text').style.display='block' ">Show text</button> -->
+
+    <!-- using script tag in body -->
+    <!-- <p id="demo"></p>
+
+    <script>
+        document.getElementById('demo').innerHTML = "My first JS using seperate script tag ! ";
+    </script> -->
+
+    <!-- <h3>JavaScript is in the head section for this one</h3>
+    <p id="demo">Click the button below to change this Paragraph!</p>
+    <br>
+    <button type="button"    onclick="myfunc()">Change</button>
+    <button type="button"    onclick="myfunc2()">Change back</button> -->
+    
+    <!-- <h3>JavaScript is in the External File for this one</h3>
+    <p id="demo">Click the button below to change this Paragraph!</p>
+    <br>
+    <button type="button"    onclick="myfunc1()">Change</button>
+    <button type="button"    onclick="myfunc2()">Change back</button>
+    <button type="button"    onclick="myfunc3()">Cat</button> -->
+
+    <!-- 
+        NOTE : 
+        JavaScript can "display" data in different ways:
+
+            Writing into an HTML element, using innerHTML.
+
+            Writing into the HTML output using document.write().
+                -good for testing
+                -if used after HTML has loaded it'll delete all existing HTML
+                -sue only for testing
+
+            Writing into an alert box, using window.alert().
+                -can skip the window keyword
+                -as windows object is a global scope object
+                -all variables, properties and method belong to this object
+
+            Writing into the browser console, using console.log()
+                -used for debugging purposes
+                -
+     -->
+    
+     <!-- <h3>Testing Displaying functions in JS </h3> -->
+     <!-- <script>
+        document.write(5+6);
+     </script>
+     <button onclick="document.write(6+11)">Write 5+6</button> -->
+
+     <!-- <script>
+        window.alert(5+6);
+     </script>
+     <button onclick="alert('5+6 = '+(5+6))">window.alert(5+6)</button> -->
+
+     <!-- <script>
+        console.log(5+6);
+     </script>
+     <button onclick="console.log('5+6 = '+(5+6))">Check console for 5+6</button> -->
+
+     <!-- <button onclick="window.print()">Print this page</button> -->
+
+     <!-- <h3>JS Statements</h3>
+     <p id="demo">JS says...</p>
+     <script>
+        let x,y;
+            x=5; y=6; 
+        let z=x+y;
+        document.getElementById('demo').innerHTML = "The value of Z = "+z;
+     </script> -->
+
+     <!-- 
+        NOTE : 
+            var	- Declares a variable
+            let	- Declares a block variable
+            const - Declares a block constant
+
+            if - Marks a block of statements to be executed on a condition
+            switch - Marks a block of statements to be executed in different cases
+
+            for - Marks a block of statements to be executed in a loop
+
+            function - Declares a function
+            return - Exits a function
+
+            try - Implements error handling to a block of statement
+      -->
+
+      <!--
+        JS data types and adv data types
+        -Number without decimal (kinda like integer)
+        -Number with decimal (kinda like float)
+        -String (it's string)
+
+        -array : const array = ["Volvo", "Lamborgini", "Mustang"];
+        -object : const obj = {firstname:"Varun", lastname:"Verma", age:20, height:172, eyecolor:"brown"};
+        -accessing obj properties : obj.property ; eg: obj.firstname
+        -you can also put functions as property value. eg:
+
+        const person = {
+            firstname : "Varun",
+            lastname : "Verma",
+            age:20,
+            fullname : function(){return this.firstname+" "+this.lastname;}
+        };
+        Fullname here becomes a method. Accessing : person.fullname();
+
+        String methods
+        -str.length : returns the length of the string str
+
+        -str.slice(start_idx,end_inx) : returns a new string with only that slice of str. Negative indexes means it'll take values from the back
+        eg: let txt = str.slice(7,13); str.slice(-12,-6);
+
+        -str.substring() : similar to slice but doesn't take negative indexes
+        eg: let txt = str.substring(7,13);
+
+        -substr(start_idx,length) : similar to slice, but second parameter is the length of the substring to be taken out
+        eg: let txt = str.substr(7,6); leet txt = str.substr(-4);
+
+        -str.replace() : returns a new string with the specified word replaced with what me want
+        eg: let txt = str.replace("Microsoft","w3schools");
+        Note : replace() doesn't change original string, it returns a new string
+        replace by  default will only replace the first occurance of the word
+        to replace all use /g flag
+        eg: let txt = str.replace(/Microsoft/g,"w3schools");
+        -->
+      
+        <!-- <h3>HTML DOM functions</h3>
+        <p id="intro">Finding elements using ID</p>
+        <p id="subintro">This part displays the working of getElementById & innerHTML</p>
+        <button onclick="func()">CLick to change below paragraph</button>
+        <p id="result">Here will be the result</p>
+        <script>
+            function func() {
+                const into = document.getElementById("intro");
+                const subinto = document.getElementById("subintro");
+                document.getElementById("result").innerHTML = "Both the paragrah together say : \n"+intro.innerHTML+" "+subintro.innerHTML;
+            }
+        </script> -->
+
+        <h3>JS forms</h3>
+        <p>Please enter a number from 1 to 10</p>
+        <input id="n">
+        <!-- 
+            Note :
+            the type of the input here doesn't matter : text,number or even no type
+            will all send a string value to the script. we would have to parse it into int 
+            if we wish to get a number 
+            but string type also somehow it is working
+        -->
+        <button type="button" onclick="func()">check</button>
+        <p id="demo">Result</p>
+
+        <script>
+            function func() {
+                let x = document.getElementById("n").value;
+                console.log(x);
+                console.log(typeof(x));
+                let result;
+                if (isNaN(x)||x<1||x>10)
+                    text = "Input not valid !";
+                else
+                    text = "Input is valid !";
+                
+                document.getElementById("demo").innerHTML = text;
+            }
+        </script>
+
+</body>
+</html>

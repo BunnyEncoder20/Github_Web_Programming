@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gas Money Calculator</title>
+    <style>
+        legend{
+            padding: 5px 20px;
+            font-size: larger;
+            border: 1px double black;
+        }
+        label{
+            display: inline-block;
+            width: 250px;
+        }
+        input{
+            width: 81px;
+            text-align: center;
+        }
+        
+        #btn{
+            margin-left: 253px;
+            transition: 1s;
+            padding: 5px 15px;
+            border-radius: 3px;
+        }
+        #btn:hover{
+            background-color: rgb(68, 247, 68);
+            cursor: pointer;
+        }
+    </style>
+    <script src="petrol.js"></script>
+</head>
+<body>
+    <fieldset>
+        <legend>Gas Money Calculator</legend>
+        <br><br>
+        <label for="kms">Distance</label>
+        <input type="text" id="kms" placeholder="kms">
+        <br><br>
+        <label for="petrol">Petrol cost / Litre</label>
+        <input type="text" id="petrol" placeholder="₹/L">
+        <br><br>
+        <label for="mileage">Mileage of vehicle</label>
+        <input type="text" id="mileage" placeholder="kms/L">
+        <br><br>
+        <button type="button" id="btn" onclick="func()">Calculate</button>
+    </fieldset>
+    <br><br>
+    <fieldset>
+        <legend>Results</legend>
+        <br>
+        <label for="r1">Distance</label>
+        <input id="r1" placeholder="kms">
+        <br><br>
+        <label for="r2">Petrol Cost</label>
+        <input id="r2" placeholder="₹/L">
+        <br><br>
+        <label for="r3">Mileage</label>
+        <input id="r3" placeholder="kms/L">
+        <br><br>
+        <label for="r4">Total petrol cost</label>
+        <input id="r4" placeholder="₹">
+        <br>
+    </fieldset>
+</body>
+</html>
