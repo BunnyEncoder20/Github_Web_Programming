@@ -10,6 +10,9 @@
 <body>
     <table>
         <caption>Table</caption>
+        <!-- <callgroup>
+            <col span="2" style="background-color: red;">
+        </callgroup> -->
         <tr>
             <th colspan="3">This cell spans over 3 columns</th>
         </tr>
@@ -19,13 +22,13 @@
             <td>Bye</td>
         </tr>
         <tr>
-            <td>Hello hello hello</td>
+            <td id="cell21">Hello hello hello</td>
             <td>Good</td>
             <td>Bye</td>
         </tr>
         <tr>
             <td colspan="2">This cell spans over 2 columns</td>
-            <td>!!!</td>
+            <td></td>
         </tr>
     </table>
 
@@ -33,10 +36,49 @@
 
     <p id="time"></p>
 
-    <input type="checkbox" value="4">
+    <form action="">
+        <input type="range" max="100" min="10" oninput="this.nextElementSibling.value = this.value">
+        <output></output>
+        <input type="number" max="10" min="1">
+        <select name="cars" id="cars">
+            <option value="car">car</option>
+            <option value="bike">bike</option>
+        </select>
+        <input type="email">
+    </form>
     
+    
+
+    <div id="lorem">
+        <h3>A Ramdom Paragraph</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad voluptate at quas autem facilis exercitationem nisi optio, molestiae tempore, minima unde similique voluptas dolore recusandae, omnis sed error. Repudiandae quisquam ipsum facilis temporibus corrupti reiciendis quos quo, expedita impedit laborum quas aliquid a ratione vitae? Earum suscipit eos tempore impedit corporis cumque id! Blanditiis libero atque architecto, autem rem enim quibusdam repellat exercitationem, eius rerum sit sed maiores corrupti laudantium. Sit quas repudiandae dolorem beatae soluta doloribus harum officia eos a quisquam quam repellendus, commodi recusandae possimus ratione, voluptate adipisci at dicta dignissimos ad nesciunt, non expedita placeat dolorum? Non?</p>
+    </div>
+
+    <div id="catlinks">
+        <a target="_blank" href="https://www.google.com/search?q=funny%20cats&tbm=isch&tbs=rimg:CSTiCTNCrfNpYQDBKQ19iYHk8AEAsgIMCgIIABAAOgQIABAA&hl=en&sa=X&ved=0CAIQrnZqFwoTCOCkmL2m6PkCFQAAAAAdAAAAABAM&biw=1519&bih=694">
+            <img src="images/catwithglasses.jpg" alt="catto" >
+        </a>
+        <br>
+        <a href="mailto:gangsterCat@catmail.com">Send Mail to Gangster Cat</a>
+        <br>
+        <a href="https://en.wikipedia.org/wiki/Cat#Characteristics">Cat Wiki</a>
+        <br>
+        <a href="javascript:alert('Hello World')">Execute JS Alert box</a>
+    </div>
+    <div id="lists">
+        <ul>
+            <li>item1</li>
+            <li>item2</li>
+            <li>item3</li>
+        </ul>
+    </div>
+
+    <iframe src="C:\Program Files\Java" frameborder="5px">
+        your broswer doesn't support iframes
+    </iframe>
     <script>
         document.getElementById("time").innerHTML = Date();
+        // confirm("hello?");
     </script>
 </body>
 </html>

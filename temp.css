@@ -1,11 +1,50 @@
 table{
     border-spacing: 10px;
     border: 5px inset grey;
+    float: right;
+    /* table-layout: auto; */
+    empty-cells: hide;
 }
 td,th{
     border: 5px outset grey;
     padding: 10px;
     text-size-adjust: auto;
     font-family: Arial;
-    
+}
+body{
+    /* background-image: url(images/bg_img.jpg); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    /* background-attachment: fixed; */
+    /* used when you don't want the image to move when you scroll down the page */
+}
+
+h3{
+    font-variant:small-caps;
+    /* color: white; */
+    text-decoration: overline underline;
+    /* text-shadow: 2px 2px black; */
+    word-spacing: 2em;
+}
+#cell21{
+    background-color: greenyellow;
+}
+#lorem{
+    /* color: white; */
+    font-size: large;
+    text-align: center;
+    /* background-color: black; */
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    padding: 5px;
+    text-indent: 2em;
+}
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style-type: square;
+    /* list-style-image: url(images/catwithglasses.jpg); */
 }
