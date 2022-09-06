@@ -17,6 +17,9 @@ function func() {
     let r3 = document.getElementById("r3");
     let r4 = document.getElementById("r4");
 
+    // document.writeln("r1 <br/>");
+    // document.writeln("r2");
+
     r1.value = distance;
     r2.value = petrol;
     r3.value = mileage;

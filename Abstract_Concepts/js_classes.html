@@ -1,10 +1,12 @@
+<!-- How to use Classes, objects, methods, inheritance in JS -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Temp Website</title>
+    <title>Document</title>
     <link rel="stylesheet" href="temp.css">
 </head>
 <body>
@@ -30,6 +32,10 @@
         class Model extends Car{
             constructor(name,model){
                 super(name);
+                // The super() method refers to the parent class.
+                // By calling the super() method in the constructor method, we call the 
+                // parent's constructor method and gets access to the parent's properties
+                // and methods.
                 this.model = model;
             }
 
