@@ -1,0 +1,122 @@
+/* Importing the font from google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Asul:wght@400;700&display=swap');
+
+*{
+    font-family: Asul;
+    /* background-color: black; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.top-nav{
+    width: 100%;
+    min-height: 100vh;
+    background-color: black;
+    color: white;
+}
+
+.logo{
+    height: 120px;
+    cursor: pointer;
+}
+.user{
+    height: 82px;
+    border-radius: 50%; /*  will the mae image a circle */
+    cursor: pointer;
+    margin-left: 40px;
+}
+
+nav {
+    background: rgb(67, 67, 212);
+    width: 100%;
+    padding: 10px 10px;
+    display: flex;
+    align-items: center; /*All items side by side*/
+    justify-content: space-between;
+    position: relative;
+}
+nav ul{
+    width: 100%;
+    text-align: center;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 30px;
+    padding: 0px 40px ;
+}
+
+.sub-menu-wrap{
+    position: absolute;
+    top: 100%;
+    right: 10PX;
+    width: 320px;
+    background-color: #fff;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+.sub-menu-wrap.open-menu{
+    max-height: 400px;
+}
+
+.sub-menu{
+    background: rgb(67, 67, 212);
+    position: 20px;
+    margin: 10px;
+    padding: 5px 8px;
+}
+
+.user-info{
+    display: flex;
+    align-items: center;
+}
+.user-info h3{
+    font-weight: 700;
+    font-size: 25px;
+    color: white;
+}
+.user-info img{
+    width: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.sub-menu hr{
+    border: 0;
+    height: 1px;
+    width: 100%;
+    background:#ccc;
+    margin: 15px 0 10px;
+}
+
+.sub-menu-link{ 
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    margin: 12px 0;
+    padding: 2px 30px;
+    background-color: rgba(255, 0, 0, 0.5);
+}
+.sub-menu-link p{
+    width: 100%;    /*so that the signout img is on the right side*/
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+.sub-menu-link img{
+    transition: 0.5s;
+}
+
+.sub-menu-link:hover img{
+    transform: translateX(10px);
+}
+.sub-menu-link:hover p{
+    font-weight: 700;
+}
