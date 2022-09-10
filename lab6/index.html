@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+
+    <style>
+        
+        label{
+            font-size: 20px;
+        }
+        input[type="text"]{
+            font-size: 18px;
+        }
+        #formselement{
+            width: 600px;
+            padding: 20px;
+        }
+        
+    </style>
+
+    <script src="index.js"></script>
+</head>
+<body>
+    <form action="#" onsubmit="return validation()">
+        <div id="formselement">
+
+            <label for="fname">Policy Holder's Name</label><br>
+            <input type="text" id="fname" placeholder="first name">
+            &ensp;
+            <input type="text" id="lname" placeholder="last name">
+            <br><br>
+
+            <label for="businessOS">Doing Business OS</label><br>
+            <input type="text" id="businessOS">
+            <br><br>
+
+            <label for="freqby">Requested By</label><br>
+            <input type="text" id="freqby" placeholder="first name">
+            &ensp;&ensp;
+            <input type="text" id="lreqby" placeholder="last name">
+            <br><br>
+
+            <label for="emailR">Email</label><br>
+            <input type="text" id="emailR">
+            <br>
+            <label for="phone">Phone</label><br>
+            <input type="text" id="phone">
+            <br><br><br><br>  
+
+            <label for="fholders">Name of Certificate Holders</label><br>
+            <input type="text" id="fholders" placeholder="first name">
+            &ensp;&ensp;
+            <input type="text" id="lholders" placeholder="last name">
+            <br><br>
+
+            <label for="add">Address of Certificate Holder</label><br>
+            <input type="text" id="add1" placeholder="Streetadd1"><br><br>
+            <input type="text" id="add2" placeholder="Streetadd2"><br><br>
+            <input type="text" id="city" placeholder="city">&ensp;
+            <input type="text" id="state" placeholder="State"><br><br>
+            <input type="text" id="Postalcode" placeholder="postalcode">&ensp;
+            <input type="text" id="country" placeholder="Country">
+            <br><br><br><br><br>
+
+            <label for="emailC">Email of Certificate Holder</label>
+            <br>
+            <input type="text" id="emailC">
+            <br><br>
+
+            <label>Name Certificate holders as Additional Insured ?</label>
+            <br>
+            <input type="radio" id="additional1">
+            <label for="additional1">Yes</label>
+            <br>
+            <input type="radio" id="additional2">
+            <label for="additional2">No</label>
+            <br><br>
+
+            <label>Is there a contractual obligation to name the above additionally insured?</label>
+            <br>
+            <input type="radio" id="additional3">
+            <label for="additional3">Yes</label>
+            <br>
+            <input type="radio" id="additional4">
+            <label for="additional4">No</label>
+            <br><br>
+
+            <label for="project">Project is/ will Occupied by :</label>
+            <br>
+            <input type="text" id="project">
+            <br><br>
+
+            <label for="jobdes">Detailed Job Description</label><br>
+            <textarea name="jobdes" id="jobdes" cols="30" rows="10">
+            </textarea>
+            <br><br>
+            <br><br>
+
+            <input type="submit" id="submit">
+        </div>
+
+    </form>
+
+</body>
+</html>
