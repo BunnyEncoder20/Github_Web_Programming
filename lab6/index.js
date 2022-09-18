@@ -24,8 +24,20 @@ function validation() {
     }
 
 
-    var emailpattern = /[A-z]/
-    if (emailC=="") {
-        alert("Email blank");
+    var emailpattern = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    if (!emailC.match(emailpattern)) {
+        alert('Email of "Certificate Holder" is not in proper format !');
+        return false
+    }
+
+    if (!emailR.match(emailpattern)) {
+        alert('Email of "Requested By" is not in proper format !');
+        return false;
+    }
+
+    var numberpattern = /^\d{10}$/; //checks if the input is 10 digit numeric, no comma, no spaces
+    if (!phone.match(numberpattern)) {
+        alert('The phone number for "requested by" should contain only numbers !');
+        return false;
     }
 }

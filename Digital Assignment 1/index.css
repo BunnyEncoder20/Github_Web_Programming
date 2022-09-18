@@ -7,6 +7,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: black;
 }
 
 .top-nav{
@@ -39,6 +40,7 @@
 .top ul{
     width: 100%;
     text-align: center;
+    background: rgb(67, 67, 212);
 }
 .top ul li{
     display: inline-block;
@@ -50,6 +52,7 @@
     text-decoration: none;
     font-size: 30px;
     padding: 0px 40px ;
+    background: rgb(67, 67, 212);
 }
 
 .sub-menu-wrap{
@@ -76,11 +79,13 @@
 .user-info{
     display: flex;
     align-items: center;
+    background: rgb(67, 67, 212);
 }
 .user-info h3{
     font-weight: 700;
     font-size: 25px;
     color: white;
+    background: rgb(67, 67, 212);
 }
 .user-info img{
     width: 60px;
@@ -102,16 +107,18 @@
     color: white;
     margin: 12px 0;
     padding: 2px 30px;
-    background-color: rgba(255, 0, 0, 0.5);
+    background-color: rgb(255, 0, 0);
 }
 .sub-menu-link p{
     width: 100%;    /*so that the signout img is on the right side*/
     font-size: 20px;
     transition: 0.5s;
+    background-color: rgb(255, 0, 0);
 }
 
 .sub-menu-link img{
     transition: 0.5s;
+    background-color: rgb(255, 0, 0);
 }
 
 .sub-menu-link:hover img{
@@ -126,7 +133,7 @@
 .sidebar{
     position: absolute;
     z-index: 100;
-    width: 250px;
+    width: 270px;
     height: 100%;
     left: 0;
     top: 141px;
@@ -153,6 +160,8 @@
     border-bottom: 1px solid rgba(255, 255,255, 0.1);
 }
 .sidebar ul li a{
+    position: relative;
+    background-color: black;
     color: white;
     text-decoration: none;
     font-size: 18px;
@@ -160,17 +169,17 @@
     font-weight: 500;
     display: block;
     width: 100%;
-    border-left-color: black;
+    border-left: 5px solid transparent;
 }
 .sidebar ul li a:hover{
     color: cyan;
     background-color: #1e1e1e;
-    border-left-color: cyan;
+    border-left: 5px solid cyan;
 }
 
 .sidebar ul ul{
     position: static;
-    display: none;  /*This property causes the submenus to hide, without it they be showing*/
+    display: none;  /* This property causes the submenus to hide, without it they be showing */
 }
 .sidebar ul ul li{
     line-height: 42px;
@@ -182,13 +191,14 @@
     padding-left: 80px;
 }
 .sidebar ul li a span{
-    /* position: absolute; */
+    position: absolute;
     top: 50%;
     right: 20px;
-    transform: translateY(-50%);
     font-size: 22px;
+    transform: translateY(-50%);
     transition: transform 0.4s;
 }
-.sidebar ul li a :hover span{
+.sidebar ul li a:hover span{
     transform: translateY(-50%) rotate(-180deg);
+    background-color: #1e1e1e;
 }
