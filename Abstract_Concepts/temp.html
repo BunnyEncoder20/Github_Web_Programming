@@ -1,0 +1,57 @@
+<html>
+
+<head>
+    <title>Practice</title>
+
+    <style>
+        table {
+            border: 3px solid green;
+            border-collapse: collapse;
+            table-layout: fixed;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 12px;
+        }
+
+        table td {
+            border: 3px solid green;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td class="shrink">element1hello</td>
+            <td class="shrink">data</td>
+            <td class="shrink">junk here</td>
+            <td class="expand">last column</td>
+        </tr>
+        <tr>
+            <td class="shrink">elem</td>
+            <td class="shrink">more data</td>
+            <td class="shrink">other stuff</td>
+            <td class="expand">again, last column</td>
+        </tr>
+        <tr>
+            <td class="shrink">more</td>
+            <td class="shrink">of </td>
+            <td class="shrink">these</td>
+            <td class="expand">rows</td>
+        </tr>
+    </table>
+</body>
+
+<script>
+    const validation = () => {
+        let email = document.getElementById('email').value;
+        ereg = '/\w+/';
+        if (email.match(ereg)) {
+            console.log("ok");
+        }
+        else {
+            console.log("NOT ok");
+        }
+    }
+</script>
+
+</html>

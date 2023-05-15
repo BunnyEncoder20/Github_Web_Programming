@@ -8,41 +8,30 @@
     <link rel="stylesheet" href="temp.css">
 </head>
 <body>
-   <h2>
-        What is you fav car ?
-    </h2>
-        <br><br>
-    <div id="display">Answer :</div>
-    <br><br>
-    <button onclick="func()" type="button">Click to answer !</button>
+    <h3>Email Verification</h3>
+    <p>Email : varun.verma2020@vitstudent.ac.in</p>
+    <button onclick="func()">verify email</button>
 
-   <script>
-        class Car{
-            constructor(name){
-                this.brand = name;
+    <script>
+        function func(){
+            string = "varun.verma2020@vitstudent.ac.in";
+            if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(string)) {
+                document.getElementById("op").innerHTML = "Valid Email" ;
+            }
+            else{
+                document.getElementById("op").innerHTML = "Invalid Email" ;
             }
 
-            method1(){
-                return "I have a "+this.brand ;
-            }
+            string1 = "1234567";
+            if(/^\w*$/.test(string1))
+                document.getElementById("op1").innerHTML = "true";
+            else
+                document.getElementById("op1").innerHTML = "false";
         }
+    </script>
 
-        class Model extends Car{
-            constructor(name,model){
-                super(name);
-                this.model = model;
-            }
+    <p id="op"></p>
+    <p id="op1"></p>
 
-            method2(){
-                return "Answer : "+this.method1()+", it is a "+this.model
-            }
-        }
-
-        function func() {
-            const mycar = new Model("Ford","Mustang GT");
-            console.log(mycar.method2);
-            document.getElementById("display").innerHTML = mycar.method2();
-        }
-   </script>
 </body>
 </html>

@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>AJAX basics</title>
+        <!-- JQuery Integration CDN link -->
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+        <script>
+            $(document).ready(      //anything inside .read(); will only get executed after the page finishes loading 
+            function(){
+                $("#btn").click(
+                    function(){
+                        $("#test").load("data.txt", );     //load(url of file, data for new req, callback)
+                        $("#test").css("background-color","red")        //how to change the css for a id one css at a time only
+                    }
+                )
+            }
+        );
+        </script>
+    </head>
+
+    <body>
+        <div id="test">
+            <p>This is the content which will be changes by the data inside data.txt</p>
+        </div>
+        <button id="btn">Click to change the paragraph</button>
+    </body>
+</html>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="xslt.xsl" type="text/xsl" ?>
+
+<friendslist>
+    <friend>
+        <firstname>Somya</firstname>
+        <lastname>Kumari</lastname>
+        <nickname>Soma</nickname>
+    </friend>
+    <friend>
+        <firstname>Abhinav</firstname>
+        <lastname>Singh</lastname>
+        <nickname>Bunnu</nickname>
+    </friend>
+    <friend>
+        <firstname>Rishabh</firstname>
+        <lastname>Hooda</lastname>
+        <nickname>Hooda</nickname>
+    </friend>
+</friendslist>

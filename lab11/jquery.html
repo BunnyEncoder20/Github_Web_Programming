@@ -1,0 +1,99 @@
+<html>
+    <head>
+        <title>JQuery</title>
+
+        <!-- JQuery Integration CDN link -->
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+        <script>
+            $(document).ready(
+                function(){
+                    $("#red").hover(
+                        function(){
+                            $("#div1").css("background-color","red");
+                        }
+                        ,
+                        function(){
+                            $("#div1").css("background-color","white");
+                        }
+                    );
+
+                    $("#green").hover(
+                        function(){
+                            $("#div1").css("background-color","green");
+                        }
+                        ,
+                        function(){
+                            $("#div1").css("background-color","white");
+                        }
+                    );
+
+                    $("#blue").hover(
+                        function(){
+                            $("#div1").css("background-color","blue");
+                        }
+                        ,
+                        function(){
+                            $("#div1").css("background-color","white");
+                        }
+                    );
+
+                    $("#extp").click(
+                        function(){
+                            alert($(".p1").text());
+                        }
+                    );
+                    $("#extl").click(
+                        function(){
+                            alert($(".friends").text());
+                        }
+                    );
+
+                    $("#search").on("keyup",
+                        function(){
+                            var value = $(this).val().toLowerCase();
+                            $("#cities li").filter();
+                        }
+                    );
+                }
+            );
+        </script>
+    
+    </head>
+    <body>
+        <br><br><br>
+        <div id="div1" style="padding-left: 550px;">
+            <br><br>
+            <button id="red">RED</button>&ensp;&ensp;&ensp;&ensp;
+            <button id="green">GREEN</button>&ensp;&ensp;&ensp;&ensp;
+            <button id="blue">BLUE</button>
+            <br><br>
+        </div>
+
+        <br><br>
+
+        <div>
+            <p class="p1">Varun and Soma are best friends since childhood, even till now!</p>
+            <ol class="friends">
+                <li>Soma</li>
+                <li>Varun</li>
+                <li>Bunnu</li>
+                <li>Hoods</li>
+            </ol>
+            <button id="extp">Extract Paragrapgh Text</button>&ensp;&ensp;&ensp;&ensp;&ensp;
+            <button id="extl">Extract List text</button>
+        </div>
+
+        <br><br>
+
+        <div>
+            <input id="search" type="text" placeholder="Search some shiz">
+            <br>
+            <ul id="cities">
+                <li>Mumbai</li>
+                <li>Delhi</li>
+                <li>Kolkata</li>
+                <li>Chennai</li>
+            </ul>
+        </div>
+    </body>
+</html>

@@ -25,6 +25,7 @@ function validation() {
 
 
     var emailpattern = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    
     if (!emailC.match(emailpattern)) {
         alert('Email of "Certificate Holder" is not in proper format !');
         return false
